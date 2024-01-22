@@ -126,13 +126,13 @@ contactForm.addEventListener('submit', function (event) {
     return;
   }
 
-  if (message.split(' ').filter(Boolean).length < 15) {
-    errorMessage.textContent = 'Please enter at least 15 words in the message.';
+if (message.trim().length < 15) {
+    errorMessage.textContent = 'Please enter at least 15 characters in the message.';
     errorMessage.style.display = 'block';
     submitButton.classList.remove('valid');
     submitButton.classList.add('error');
     return;
-  }
+} 
 
   // Continue with form submission or processing
   // ...
