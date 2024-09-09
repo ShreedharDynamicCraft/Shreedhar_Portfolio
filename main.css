@@ -249,30 +249,28 @@ font-size: larger;
     text-decoration: none;
   }
   
-  /* .filter {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .filter button {
-    padding: 0.5rem 1rem;
-    border: none;
-    background: #007bff;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s;
-  } */
+
   
   .filter button:hover {
-    background: #0056b3;
+    background: #8bc3ff;
   }
+
+  /* Default button style */
+
+/* Active button style */
+.filter button.active {
+  background-color: blue; /* Blue color on active */
+  color: white;
+  font-size:medium;
+  font-family: monospace;
+}
+
   
-  .filter button[data-filter="all"] {
+  /* .filter button[data-filter="all"] {
     background: #28a745;
-  }
+  } */
   
-  .filter button[data-filter="all"]:hover {
-    background: #218838;
-  }
+  /* .filter button[data-filter="all"]:hover {
+    background: #0056b3;
+  } */
   
